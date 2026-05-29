@@ -388,6 +388,24 @@ const filters = {
   missingArtifacts: false,
 };
 
+function initTheme() {
+  const savedTheme = localStorage.getItem("portfolioTheme") || "dark";
+  setTheme(savedTheme);
+  document.querySelectorAll("[data-theme-choice]").forEach((button) => {
+    button.addEventListener("click", () => setTheme(button.dataset.themeChoice));
+  });
+}
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem("portfolioTheme", theme);
+  document.querySelectorAll("[data-theme-choice]").forEach((button) => {
+    const active = button.dataset.themeChoice === theme;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
 function parseDate(value) {
   if (!value) return null;
   return new Date(`${value}T00:00:00+07:00`);
@@ -1188,5 +1206,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+initTheme();
 initFilters();
 render();
