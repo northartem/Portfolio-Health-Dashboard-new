@@ -1038,8 +1038,12 @@ function renderStatusChart(portfolio) {
   document.getElementById("statusChart").innerHTML = statusesProject
     .map((status) => {
       const count = projects.filter((issue) => issue.status === status).length;
-      const width = Math.max(4, Math.round((count / max) * 100));
-      return `<div class="status-item"><strong>${status}</strong><div class="status-bar"><span style="width:${width}%"></span></div><span>${count}</span></div>`;
+      const intensity = count === max ? "max" : count >= Math.ceil(max / 2) ? "medium" : "low";
+      return `<div class="status-tile status-tile--${intensity}">
+        <span>${status}</span>
+        <strong>${count}</strong>
+        <em>projects</em>
+      </div>`;
     })
     .join("");
 }
