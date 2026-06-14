@@ -16,8 +16,8 @@ const issues = [
   {
     key: "PPM-101",
     issueType: "Project",
-    summary: "Billing Platform Migration",
-    description: "Migration of billing core to the target platform.",
+    summary: "Миграция биллинговой платформы",
+    description: "Миграция ядра биллинга на целевую платформу.",
     teams: "Platform",
     reporter: "Irina Volkova",
     assignee: "Masha Kerbs",
@@ -42,8 +42,8 @@ const issues = [
   {
     key: "PPM-102",
     issueType: "Project",
-    summary: "Customer Data Lake",
-    description: "Unified lake for customer analytics.",
+    summary: "Озеро клиентских данных",
+    description: "Единое хранилище данных для клиентской аналитики.",
     teams: "Data",
     reporter: "Anna Smirnova",
     assignee: "Pavel Ivanov",
@@ -68,8 +68,8 @@ const issues = [
   {
     key: "PPM-103",
     issueType: "Project",
-    summary: "Mobile App Checkout",
-    description: "Checkout flow refresh for iOS and Android.",
+    summary: "Оформление заказа в мобильном приложении",
+    description: "Обновление сценария оформления заказа для iOS и Android.",
     teams: "Mobile",
     reporter: "Ivan Fedorov",
     assignee: "Elena Petrova",
@@ -94,8 +94,8 @@ const issues = [
   {
     key: "PPM-104",
     issueType: "Project",
-    summary: "Support Portal Redesign",
-    description: "New support portal information architecture.",
+    summary: "Редизайн портала поддержки",
+    description: "Новая информационная архитектура портала поддержки.",
     teams: "CX",
     reporter: "Oleg Mironov",
     assignee: "Dmitry Kuznetsov",
@@ -120,8 +120,8 @@ const issues = [
   {
     key: "PPM-105",
     issueType: "Project",
-    summary: "IAM Hardening",
-    description: "Privileged access review and hardening.",
+    summary: "Усиление безопасности IAM",
+    description: "Проверка и усиление защиты привилегированного доступа.",
     teams: "Security",
     reporter: "Masha Kerbs",
     assignee: "",
@@ -146,8 +146,8 @@ const issues = [
   {
     key: "PPM-106",
     issueType: "Project",
-    summary: "Warehouse Forecasting",
-    description: "Demand forecast model implementation.",
+    summary: "Прогнозирование складского спроса",
+    description: "Внедрение модели прогнозирования спроса.",
     teams: "Data",
     reporter: "Anna Smirnova",
     assignee: "Pavel Ivanov",
@@ -172,8 +172,8 @@ const issues = [
   {
     key: "PPM-107",
     issueType: "Project",
-    summary: "PMO Reporting Standard",
-    description: "Standard reports and health governance.",
+    summary: "Стандарт отчётности проектного офиса",
+    description: "Стандартные отчёты и правила управления здоровьем проектов.",
     teams: "PMO",
     reporter: "Head of PMO",
     assignee: "Masha Kerbs",
@@ -198,8 +198,8 @@ const issues = [
   {
     key: "PPM-108",
     issueType: "Project",
-    summary: "Legacy CRM Closure",
-    description: "Close the final CRM migration wave.",
+    summary: "Вывод из эксплуатации старой CRM",
+    description: "Завершение последней волны миграции CRM.",
     teams: "CRM",
     reporter: "Irina Volkova",
     assignee: "Elena Petrova",
@@ -224,8 +224,8 @@ const issues = [
   {
     key: "PPM-109",
     issueType: "Project",
-    summary: "Contract Automation",
-    description: "Automation of contract intake workflow.",
+    summary: "Автоматизация договорной работы",
+    description: "Автоматизация процесса приёма и обработки договоров.",
     teams: "Legal Tech",
     reporter: "Ivan Fedorov",
     assignee: "Dmitry Kuznetsov",
@@ -250,8 +250,8 @@ const issues = [
   {
     key: "PPM-110",
     issueType: "Project",
-    summary: "Data Retention Cleanup",
-    description: "Cancel legacy retention cleanup initiative.",
+    summary: "Очистка устаревших данных",
+    description: "Закрытие инициативы по очистке устаревших данных.",
     teams: "Security",
     reporter: "Head of PMO",
     assignee: "Pavel Ivanov",
@@ -276,8 +276,8 @@ const issues = [
   {
     key: "PPM-1",
     issueType: "Program",
-    summary: "Data & Billing Transformation",
-    description: "Program for billing and data modernization.",
+    summary: "Трансформация данных и биллинга",
+    description: "Программа модернизации биллинга и платформы данных.",
     teams: "Platform, Data",
     reporter: "CTO",
     assignee: "Masha Kerbs",
@@ -302,8 +302,8 @@ const issues = [
   {
     key: "PPM-2",
     issueType: "Program",
-    summary: "Customer Experience Portfolio",
-    description: "Customer-facing delivery stream.",
+    summary: "Портфель клиентского опыта",
+    description: "Поток изменений клиентских продуктов и сервисов.",
     teams: "Mobile, CX",
     reporter: "CTO",
     assignee: "Elena Petrova",
@@ -328,8 +328,8 @@ const issues = [
   {
     key: "PPM-3",
     issueType: "Program",
-    summary: "Governance & Security",
-    description: "Security and governance portfolio.",
+    summary: "Управление и безопасность",
+    description: "Портфель инициатив по безопасности и корпоративному управлению.",
     teams: "Security, Legal Tech",
     reporter: "Head of PMO",
     assignee: "Dmitry Kuznetsov",
@@ -354,25 +354,26 @@ const issues = [
 ];
 
 const fieldLabels = {
-  key: "Key",
-  summary: "Summary",
-  issueType: "Issue Type",
-  status: "Status",
-  priority: "Priority",
-  reporter: "Reporter",
-  assignee: "Assignee",
-  requestParticipants: "Request participants",
-  agreements: "Agreements",
-  quarter: "Quarter",
-  program: "Program",
-  targetStart: "Target Start Date",
-  startDate: "Start Date",
+  key: "Ключ",
+  summary: "Название",
+  issueType: "Тип задачи",
+  status: "Статус",
+  priority: "Приоритет",
+  reporter: "Автор",
+  assignee: "Исполнитель",
+  requestParticipants: "Участники запроса",
+  agreements: "Соглашения",
+  quarter: "Квартал",
+  program: "Программа",
+  targetStart: "Плановая дата начала",
+  startDate: "Дата начала",
   dsd: "DSD",
-  targetEnd: "Target End Date",
-  endDate: "End Date",
-  definitionOfDone: "Definition of Done",
-  passport: "Passport",
-  roadmap: "Roadmap",
+  targetEnd: "Плановая дата завершения",
+  endDate: "Дата завершения",
+  definitionOfDone: "Критерии готовности",
+  passport: "Паспорт",
+  roadmap: "Дорожная карта",
+  endDateOrResolution: "Дата завершения или решения",
 };
 
 const filters = {
@@ -452,33 +453,33 @@ function calculateHealth(issue) {
   const statusAge = Math.max(0, Math.floor((today - parseDate(issue.statusEntered)) / MS_PER_DAY));
   const endShift = daysBetween(issue.endDate, issue.targetEnd);
 
-  if (issue.status === "Ожидает") red.push("Waiting");
-  if (hasValue(issue.targetEnd) && targetEndDays < 0) red.push("Overdue");
-  if (!hasValue(issue.assignee)) red.push("Missing Assignee");
-  if (!hasValue(issue.requestParticipants)) red.push("Missing Request Participants");
-  if (!hasValue(issue.targetEnd)) red.push("Missing Target End Date");
-  if (issue.status === "В процессе" && !hasValue(issue.definitionOfDone)) red.push("Missing Definition of Done");
-  if (issue.status === "В процессе" && !hasValue(issue.requestParticipants)) red.push("Missing Request Participants");
-  if (issue.status === "В процессе" && !hasValue(issue.targetEnd)) red.push("Missing Target End Date");
-  if (issue.status === "Приемка" && !hasValue(issue.endDate)) red.push("Missing End Date");
-  if (endShift !== null && endShift > 30) red.push("Shifted > 30 Days");
+  if (issue.status === "Ожидает") red.push("Проект ожидает");
+  if (hasValue(issue.targetEnd) && targetEndDays < 0) red.push("Просрочен");
+  if (!hasValue(issue.assignee)) red.push("Не назначен исполнитель");
+  if (!hasValue(issue.requestParticipants)) red.push("Не указаны участники запроса");
+  if (!hasValue(issue.targetEnd)) red.push("Не указана плановая дата завершения");
+  if (issue.status === "В процессе" && !hasValue(issue.definitionOfDone)) red.push("Не указаны критерии готовности");
+  if (issue.status === "В процессе" && !hasValue(issue.requestParticipants)) red.push("Не указаны участники запроса");
+  if (issue.status === "В процессе" && !hasValue(issue.targetEnd)) red.push("Не указана плановая дата завершения");
+  if (issue.status === "Приемка" && !hasValue(issue.endDate)) red.push("Не указана дата завершения");
+  if (endShift !== null && endShift > 30) red.push("Сдвиг более чем на 30 дней");
   if (issue.priority === "Critical" && (!hasValue(issue.assignee) || !hasValue(issue.requestParticipants) || !hasValue(issue.targetEnd))) {
-    red.push("Critical Missing Required Fields");
+    red.push("В критическом проекте не заполнены обязательные поля");
   }
 
-  if (hasValue(issue.targetEnd) && targetEndDays >= 0 && targetEndDays < 30) yellow.push("Ending < 30 Days");
+  if (hasValue(issue.targetEnd) && targetEndDays >= 0 && targetEndDays < 30) yellow.push("Завершение менее чем через 30 дней");
   if (hasValue(issue.dsd) && daysFromToday(issue.dsd) < 0 && ["Новый", "Бэклог", "Декомпозиция и планирование"].includes(issue.status)) {
-    yellow.push("DSD Overdue");
+    yellow.push("DSD просрочен");
   }
-  if (issue.status === "Новый" && statusAge > 7) yellow.push("New > 7 Days");
-  if (issue.status === "Декомпозиция и планирование" && statusAge > 30) yellow.push("Planning Too Long");
-  if (issue.status === "Приемка" && statusAge > 7) yellow.push("Acceptance Too Long");
-  if (!hasValue(issue.passport)) yellow.push("Missing Passport");
-  if (!hasValue(issue.roadmap)) yellow.push("Missing Roadmap");
+  if (issue.status === "Новый" && statusAge > 7) yellow.push("В статусе «Новый» более 7 дней");
+  if (issue.status === "Декомпозиция и планирование" && statusAge > 30) yellow.push("Планирование длится слишком долго");
+  if (issue.status === "Приемка" && statusAge > 7) yellow.push("Приёмка длится слишком долго");
+  if (!hasValue(issue.passport)) yellow.push("Отсутствует паспорт");
+  if (!hasValue(issue.roadmap)) yellow.push("Отсутствует дорожная карта");
   if (["High", "Critical"].includes(issue.priority) && (!hasValue(issue.agreements) || !hasValue(issue.reporter) || !hasValue(issue.quarter))) {
-    yellow.push("Priority Governance Incomplete");
+    yellow.push("Не заполнены управленческие поля приоритета");
   }
-  if (hasActiveBlocker(issue)) yellow.push("Blocked By Active Issue");
+  if (hasActiveBlocker(issue)) yellow.push("Заблокирован активной задачей");
 
   if (red.length) return { health: "Red", reasons: [...new Set(red)] };
   if (yellow.length) return { health: "Yellow", reasons: [...new Set(yellow)] };
@@ -509,7 +510,7 @@ function enrich(issue) {
     ...issue,
     programName: getProgramName(issue.program),
     calculatedHealth: health.health,
-    healthReason: health.reasons.join(", ") || "No risk detected",
+    healthReason: health.reasons.join(", ") || "Риски не обнаружены",
     compliance: calculateCompliance(issue),
   };
 }
@@ -522,20 +523,23 @@ function uniqueOptions(items, selector) {
   return [...new Set(items.map(selector).filter(Boolean))].sort();
 }
 
-function setSelect(id, values, placeholder = "All") {
+function setSelect(id, values, placeholder = "Все", formatOption = (value) => value) {
   const el = document.getElementById(id);
-  el.innerHTML = [`<option value="">${placeholder}</option>`, ...values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`)].join("");
+  el.innerHTML = [
+    `<option value="">${placeholder}</option>`,
+    ...values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(formatOption(value))}</option>`),
+  ].join("");
 }
 
 function initFilters() {
   const portfolio = getPortfolio();
-  setSelect("filterAssignee", uniqueOptions(portfolio, (issue) => issue.assignee), "All PMs");
-  setSelect("filterStatus", uniqueOptions(portfolio, (issue) => issue.status), "All statuses");
-  setSelect("filterPriority", uniqueOptions(portfolio, (issue) => issue.priority), "All priorities");
-  setSelect("filterProgram", uniqueOptions(portfolio, (issue) => issue.programName), "All programs");
-  setSelect("filterAgreements", uniqueOptions(portfolio, (issue) => issue.agreements), "All agreements");
-  setSelect("filterQuarter", uniqueOptions(portfolio, (issue) => issue.quarter), "All quarters");
-  setSelect("filterHealth", ["Green", "Yellow", "Red"], "All health");
+  setSelect("filterAssignee", uniqueOptions(portfolio, (issue) => issue.assignee), "Все руководители");
+  setSelect("filterStatus", uniqueOptions(portfolio, (issue) => issue.status), "Все статусы");
+  setSelect("filterPriority", uniqueOptions(portfolio, (issue) => issue.priority), "Все приоритеты", priorityLabel);
+  setSelect("filterProgram", uniqueOptions(portfolio, (issue) => issue.programName), "Все программы");
+  setSelect("filterAgreements", uniqueOptions(portfolio, (issue) => issue.agreements), "Все соглашения");
+  setSelect("filterQuarter", uniqueOptions(portfolio, (issue) => issue.quarter), "Все кварталы");
+  setSelect("filterHealth", ["Green", "Yellow", "Red"], "Любое здоровье", healthLabel);
 
   const mappings = [
     ["filterAssignee", "assignee"],
@@ -621,32 +625,32 @@ function applyFilters(portfolio) {
 
 function updateActiveFilterCount() {
   const count = Object.values(filters).filter(Boolean).length;
-  document.getElementById("activeFilterCount").textContent = `${count} active`;
+  document.getElementById("activeFilterCount").textContent = `${count} ${pluralize(count, "активный", "активных", "активных")}`;
   renderActiveFilterChips();
 }
 
 function renderActiveFilterChips() {
   const chips = [];
   const labels = {
-    assignee: "PM",
-    status: "Status",
-    priority: "Priority",
-    program: "Program",
-    agreements: "Agreements",
-    quarter: "Quarter",
-    health: "Health",
+    assignee: "РП",
+    status: "Статус",
+    priority: "Приоритет",
+    program: "Программа",
+    agreements: "Соглашения",
+    quarter: "Квартал",
+    health: "Здоровье",
   };
 
   Object.entries(labels).forEach(([key, label]) => {
     if (filters[key]) chips.push({ key, label, value: filters[key] });
   });
-  if (filters.overdue) chips.push({ key: "overdue", label: "Overdue", value: "Yes" });
-  if (filters.endingSoon) chips.push({ key: "endingSoon", label: "Ending < 30 Days", value: "Yes" });
-  if (filters.missingArtifacts) chips.push({ key: "missingArtifacts", label: "Missing Artifacts", value: "Yes" });
+  if (filters.overdue) chips.push({ key: "overdue", label: "Просроченные", value: "Да" });
+  if (filters.endingSoon) chips.push({ key: "endingSoon", label: "Завершение < 30 дней", value: "Да" });
+  if (filters.missingArtifacts) chips.push({ key: "missingArtifacts", label: "Нет артефактов", value: "Да" });
 
   const container = document.getElementById("activeFilterChips");
   if (!chips.length) {
-    container.innerHTML = '<span class="filter-chip filter-chip--empty">No active filters</span>';
+    container.innerHTML = '<span class="filter-chip filter-chip--empty">Нет активных фильтров</span>';
     return;
   }
 
@@ -706,11 +710,11 @@ function renderExecutiveKpis(portfolio) {
     .filter((issue) => hasValue(issue.targetEnd))
     .sort((a, b) => Math.abs(daysFromToday(a.targetEnd)) - Math.abs(daysFromToday(b.targetEnd)))[0];
   const cards = [
-    { label: "Portfolio Health", value: healthScore, trend: "↑ +5% vs last month", detail: `${complianceAverage}% lifecycle compliance`, tone: "green" },
-    { label: "Portfolio Trend", value: red <= yellow ? "Stable" : "Risk up", trend: red <= yellow ? "Risks contained" : "Critical load increased", detail: `${yellow} warning / ${red} critical`, tone: red ? "yellow" : "green" },
-    { label: "Projects At Risk", value: red + yellow, trend: `${red} critical`, detail: "Red and Yellow projects", tone: red ? "red" : "yellow" },
-    { label: "Programs Active", value: programs.length, trend: "Live portfolio streams", detail: `${active.length} active projects`, tone: "blue" },
-    { label: "Upcoming Milestones", value: endingSoon, trend: nextMilestone ? nextMilestone.targetEnd : "No upcoming date", detail: nextMilestone ? nextMilestone.summary : "No active milestones", tone: endingSoon ? "yellow" : "green" },
+    { label: "Здоровье портфеля", value: healthScore, trend: "Расчётный показатель", detail: `${complianceAverage}% соответствия жизненному циклу`, tone: "green" },
+    { label: "Тренд портфеля", value: red <= yellow ? "Стабильно" : "Рост рисков", trend: red <= yellow ? "Риски под контролем" : "Критическая нагрузка выросла", detail: `${yellow} предупреждений / ${red} критических`, tone: red ? "yellow" : "green" },
+    { label: "Проекты под риском", value: red + yellow, trend: `${red} критических`, detail: "Красные и жёлтые проекты", tone: red ? "red" : "yellow" },
+    { label: "Активные программы", value: programs.length, trend: "Действующие потоки портфеля", detail: `${active.length} активных проектов`, tone: "blue" },
+    { label: "Ближайшие этапы", value: endingSoon, trend: nextMilestone ? nextMilestone.targetEnd : "Нет ближайших дат", detail: nextMilestone ? nextMilestone.summary : "Нет активных этапов", tone: endingSoon ? "yellow" : "green" },
   ];
 
   document.getElementById("executiveKpis").innerHTML = cards
@@ -728,12 +732,12 @@ function renderExecutiveKpis(portfolio) {
 function renderKpis(portfolio) {
   const active = activeProjects(portfolio);
   const kpis = [
-    ["Healthy Projects", active.filter((issue) => issue.calculatedHealth === "Green").length, "Projects with no risk signals", "✓", "green"],
-    ["Attention Required", active.filter((issue) => ["Red", "Yellow"].includes(issue.calculatedHealth)).length, "Red and Yellow projects", "!", "yellow"],
-    ["Critical Projects", active.filter((issue) => issue.calculatedHealth === "Red").length, "Requires executive focus", "×", "red"],
-    ["Missing Artifacts", active.filter(missingArtifacts).length, "Passport or roadmap missing", "□", "blue"],
-    ["Overdue", active.filter((issue) => hasValue(issue.targetEnd) && daysFromToday(issue.targetEnd) < 0).length, "Target End is in the past", "↘", "red"],
-    ["Ending Soon", active.filter((issue) => hasValue(issue.targetEnd) && daysFromToday(issue.targetEnd) >= 0 && daysFromToday(issue.targetEnd) < 30).length, "Target End within 30 days", "→", "yellow"],
+    ["Здоровые проекты", active.filter((issue) => issue.calculatedHealth === "Green").length, "Нет сигналов риска", "✓", "green"],
+    ["Требуют внимания", active.filter((issue) => ["Red", "Yellow"].includes(issue.calculatedHealth)).length, "Красные и жёлтые проекты", "!", "yellow"],
+    ["Критические проекты", active.filter((issue) => issue.calculatedHealth === "Red").length, "Требуют внимания руководства", "×", "red"],
+    ["Нет артефактов", active.filter(missingArtifacts).length, "Отсутствует паспорт или дорожная карта", "□", "blue"],
+    ["Просроченные", active.filter((issue) => hasValue(issue.targetEnd) && daysFromToday(issue.targetEnd) < 0).length, "Плановая дата завершения прошла", "↘", "red"],
+    ["Скоро завершатся", active.filter((issue) => hasValue(issue.targetEnd) && daysFromToday(issue.targetEnd) >= 0 && daysFromToday(issue.targetEnd) < 30).length, "До завершения менее 30 дней", "→", "yellow"],
   ];
 
   document.getElementById("kpiGrid").innerHTML = kpis
@@ -753,9 +757,9 @@ function renderKpis(portfolio) {
 function renderHealthDistribution(portfolio) {
   const active = activeProjects(portfolio);
   const counts = [
-    ["Healthy", "Green", active.filter((issue) => issue.calculatedHealth === "Green").length],
-    ["Warning", "Yellow", active.filter((issue) => issue.calculatedHealth === "Yellow").length],
-    ["Critical", "Red", active.filter((issue) => issue.calculatedHealth === "Red").length],
+    ["Здоровые", "Green", active.filter((issue) => issue.calculatedHealth === "Green").length],
+    ["Предупреждение", "Yellow", active.filter((issue) => issue.calculatedHealth === "Yellow").length],
+    ["Критические", "Red", active.filter((issue) => issue.calculatedHealth === "Red").length],
   ];
   const total = Math.max(1, active.length);
 
@@ -772,7 +776,7 @@ function renderHealthDistribution(portfolio) {
 }
 
 function healthBadge(health) {
-  return `<span class="badge badge--${health.toLowerCase()}">${health}</span>`;
+  return `<span class="badge badge--${health.toLowerCase()}">${healthLabel(health)}</span>`;
 }
 
 function valueOrDash(value) {
@@ -787,7 +791,7 @@ function rowHtml(columns, gridClass, issue) {
 function renderTable(id, gridClass, headers, rows, mapper) {
   const table = document.getElementById(id);
   if (!rows.length) {
-    table.innerHTML = `<div class="empty-state">No issues match current filters.</div>`;
+    table.innerHTML = `<div class="empty-state">Нет задач, соответствующих выбранным фильтрам.</div>`;
     return;
   }
   table.innerHTML = rowHtml(headers, `${gridClass} table-head`) + rows.map((row) => rowHtml(mapper(row), gridClass, row.key ? row : null)).join("");
@@ -812,7 +816,7 @@ function renderAttention(portfolio) {
   renderTable(
     "attentionTable",
     "attention-grid",
-    ["Project", "Status", "PM", "Program", "Target End", "Health", "Reason"],
+    ["Проект", "Статус", "РП", "Программа", "Плановое завершение", "Здоровье", "Причина"],
     rows,
     (issue) => [
       `<div class="project-cell"><span class="issue-key">${issue.key}</span><strong>${escapeHtml(issue.summary)}</strong><span>${priorityBadge(issue.priority)}</span></div>`,
@@ -835,14 +839,14 @@ function renderTimeline(portfolio) {
     .slice(0, 8);
 
   if (!rows.length) {
-    document.getElementById("timelineStrip").innerHTML = '<div class="empty-state">No upcoming or overdue milestones.</div>';
+    document.getElementById("timelineStrip").innerHTML = '<div class="empty-state">Нет ближайших или просроченных контрольных точек.</div>';
     return;
   }
 
   document.getElementById("timelineStrip").innerHTML = rows
     .map((issue) => {
       const tone = issue.days < 0 ? "red" : issue.days < 30 ? "yellow" : "green";
-      const label = issue.days < 0 ? `${Math.abs(issue.days)}d overdue` : `${issue.days}d left`;
+      const label = issue.days < 0 ? `просрочено на ${Math.abs(issue.days)} дн.` : `осталось ${issue.days} дн.`;
       return `<button class="timeline-item timeline-item--${tone}" type="button" data-key="${issue.key}">
         <span class="timeline-dot"></span>
         <strong>${escapeHtml(issue.targetEnd)}</strong>
@@ -861,30 +865,30 @@ function renderRisks(portfolio) {
   const active = activeProjects(portfolio);
   const cards = [
     {
-      label: "Overdue Projects",
+      label: "Просроченные проекты",
       value: active.filter((issue) => hasValue(issue.targetEnd) && daysFromToday(issue.targetEnd) < 0).length,
-      description: "Review dates and unblock decisions",
+      description: "Уточнить даты и разблокировать решения",
       filter: "overdue",
       tone: "red",
     },
     {
-      label: "Missing Artifacts",
+      label: "Не хватает артефактов",
       value: active.filter(missingArtifacts).length,
-      description: "Passport or roadmap is absent",
+      description: "Нет паспорта или дорожной карты",
       filter: "missingArtifacts",
       tone: "yellow",
     },
     {
-      label: "Projects without PM",
+      label: "Проекты без руководителя",
       value: active.filter((issue) => !hasValue(issue.assignee)).length,
-      description: "Assign ownership before execution",
+      description: "Назначить ответственного до начала работ",
       filter: "unassigned",
       tone: "red",
     },
     {
-      label: "Projects without DoD",
+      label: "Проекты без критериев готовности",
       value: active.filter((issue) => !hasValue(issue.definitionOfDone)).length,
-      description: "Clarify acceptance criteria",
+      description: "Уточнить критерии приёмки",
       filter: "dod",
       tone: "blue",
     },
@@ -934,7 +938,7 @@ function renderEnding(portfolio) {
   renderTable(
     "endingTable",
     "ending-grid",
-    ["Key", "Summary", "PM", "Status", "Priority", "Target End", "Program", "DoD", "Passport", "Roadmap"],
+    ["Ключ", "Название", "РП", "Статус", "Приоритет", "Плановое завершение", "Программа", "Критерии готовности", "Паспорт", "Дорожная карта"],
     rows,
     (issue) => [
       `<span class="issue-key">${issue.key}</span>`,
@@ -963,7 +967,7 @@ function renderDeviations(portfolio) {
   renderTable(
     "deviationsTable",
     "deviation-grid",
-    ["Key", "Summary", "PM", "Status", "Target End", "End Date", "Deviation Days", "Health Reason"],
+    ["Ключ", "Название", "РП", "Статус", "Плановое завершение", "Дата завершения", "Отклонение, дней", "Причина риска"],
     rows,
     (issue) => [
       `<span class="issue-key">${issue.key}</span>`,
@@ -985,12 +989,12 @@ function renderCompliance(portfolio) {
     return { label, percent };
   };
   const metrics = [
-    metric("% проектов с DoD", (issue) => hasValue(issue.definitionOfDone)),
-    metric("% проектов с Passport", (issue) => hasValue(issue.passport)),
-    metric("% проектов с Roadmap", (issue) => hasValue(issue.roadmap)),
-    metric("% проектов с Request participants", (issue) => hasValue(issue.requestParticipants)),
-    metric("% проектов с Target End", (issue) => hasValue(issue.targetEnd)),
-    { label: "Compliance Score", percent: active.length ? Math.round(active.reduce((sum, issue) => sum + issue.compliance, 0) / active.length) : 0 },
+    metric("% проектов с критериями готовности", (issue) => hasValue(issue.definitionOfDone)),
+    metric("% проектов с паспортом", (issue) => hasValue(issue.passport)),
+    metric("% проектов с дорожной картой", (issue) => hasValue(issue.roadmap)),
+    metric("% проектов с участниками запроса", (issue) => hasValue(issue.requestParticipants)),
+    metric("% проектов с плановой датой завершения", (issue) => hasValue(issue.targetEnd)),
+    { label: "Индекс соответствия", percent: active.length ? Math.round(active.reduce((sum, issue) => sum + issue.compliance, 0) / active.length) : 0 },
   ];
 
   document.getElementById("complianceScore").textContent = `${metrics.at(-1).percent}%`;
@@ -1003,8 +1007,8 @@ function renderCompliance(portfolio) {
 
 function renderWorkload(portfolio) {
   const active = activeProjects(portfolio);
-  const grouped = uniqueOptions(active, (issue) => issue.assignee || "Unassigned").map((pm) => {
-    const rows = active.filter((issue) => (issue.assignee || "Unassigned") === pm);
+  const grouped = uniqueOptions(active, (issue) => issue.assignee || "Не назначен").map((pm) => {
+    const rows = active.filter((issue) => (issue.assignee || "Не назначен") === pm);
     return {
       pm,
       active: rows.length,
@@ -1018,7 +1022,7 @@ function renderWorkload(portfolio) {
   renderTable(
     "workloadTable",
     "workload-grid",
-    ["PM", "Active Projects", "Red Projects", "Yellow Projects", "Overdue Projects", "Missing Artifacts"],
+    ["Руководитель", "Активные проекты", "Красные", "Жёлтые", "Просроченные", "Нет артефактов"],
     grouped,
     (row) => [escapeHtml(row.pm), row.active, row.red, row.yellow, row.overdue, row.missing],
   );
@@ -1044,7 +1048,7 @@ function renderPrograms(portfolio) {
   renderTable(
     "programTable",
     "program-grid",
-    ["Program", "Projects Count", "Red Projects", "Yellow Projects", "Overdue Projects", "Earliest Target Start", "Latest Target End"],
+    ["Программа", "Количество проектов", "Красные", "Жёлтые", "Просроченные", "Самое раннее начало", "Самое позднее завершение"],
     rows,
     (row) => [escapeHtml(row.program), row.count, row.red, row.yellow, row.overdue, valueOrDash(row.earliestStart), valueOrDash(row.latestEnd)],
   );
@@ -1060,24 +1064,24 @@ function renderStatusChart(portfolio) {
       return `<div class="status-tile status-tile--${intensity}">
         <span>${status}</span>
         <strong>${count}</strong>
-        <em>projects</em>
+        <em>проекты</em>
       </div>`;
     })
     .join("");
 }
 
 function renderRegistry(portfolio) {
-  document.getElementById("registryCount").textContent = `${portfolio.length} issues`;
+  document.getElementById("registryCount").textContent = `${portfolio.length} ${pluralize(portfolio.length, "задача", "задачи", "задач")}`;
   document.getElementById("registryList").innerHTML = portfolio
     .map(
       (issue) => `<article class="registry-card" data-key="${issue.key}">
-        <div><span class="issue-key">${issue.key}</span><div class="meta-label">${issue.issueType}</div></div>
+        <div><span class="issue-key">${issue.key}</span><div class="meta-label">${issueTypeLabel(issue.issueType)}</div></div>
         <div class="registry-card__summary">${escapeHtml(issue.summary)}<div class="meta-label">${escapeHtml(issue.healthReason)}</div></div>
-        <div class="meta-stack"><span class="meta-label">Status</span><span>${escapeHtml(issue.status)}</span></div>
-        <div class="meta-stack"><span class="meta-label">PM</span><span>${valueOrDash(issue.assignee)}</span></div>
+        <div class="meta-stack"><span class="meta-label">Статус</span><span>${escapeHtml(issue.status)}</span></div>
+        <div class="meta-stack"><span class="meta-label">РП</span><span>${valueOrDash(issue.assignee)}</span></div>
         <div>${priorityBadge(issue.priority)}</div>
-        <div class="meta-stack"><span class="meta-label">Program</span><span>${valueOrDash(issue.programName)}</span></div>
-        <div class="meta-stack"><span class="meta-label">Target End</span><span>${valueOrDash(issue.targetEnd)}</span></div>
+        <div class="meta-stack"><span class="meta-label">Программа</span><span>${valueOrDash(issue.programName)}</span></div>
+        <div class="meta-stack"><span class="meta-label">Плановое завершение</span><span>${valueOrDash(issue.targetEnd)}</span></div>
         <div>${healthBadge(issue.calculatedHealth)} <span class="badge badge--gray">${issue.compliance}%</span></div>
       </article>`,
     )
@@ -1132,18 +1136,18 @@ function openDrawer(key) {
     <div class="drawer-title">
       <div class="issue-key">${issue.key}</div>
       <h2 id="drawerTitle">${escapeHtml(issue.summary)}</h2>
-      ${healthBadge(issue.calculatedHealth)} <span class="badge badge--gray">${issue.compliance}% compliance</span>
+      ${healthBadge(issue.calculatedHealth)} <span class="badge badge--gray">${issue.compliance}% соответствия</span>
     </div>
     <section class="drawer-section">
-      <h3>Health Reason</h3>
+      <h3>Причина оценки здоровья</h3>
       <p>${escapeHtml(issue.healthReason)}</p>
     </section>
     <section class="drawer-section">
-      <h3>Lifecycle Compliance</h3>
-      <p>Checked fields: ${complianceFields(issue).map((field) => fieldLabels[field] || field).join(", ")}</p>
+      <h3>Соответствие жизненному циклу</h3>
+      <p>Проверяемые поля: ${complianceFields(issue).map((field) => fieldLabels[field] || field).join(", ")}</p>
     </section>
     <section class="drawer-section">
-      <h3>Registry Fields</h3>
+      <h3>Поля реестра</h3>
       <div class="field-grid">
         ${fields.map((field) => `<div><span class="meta-label">${fieldLabels[field]}</span><br>${valueOrDash(field === "program" ? issue.programName : issue[field])}</div>`).join("")}
       </div>
@@ -1160,18 +1164,18 @@ function closeDrawer() {
 
 function exportCsv() {
   const filtered = applyFilters(getPortfolio());
-  const headers = ["Key", "Summary", "Issue Type", "Status", "Priority", "Assignee", "Program", "Target End", "End Date", "Calculated Health", "Health Reason", "Compliance"];
+  const headers = ["Ключ", "Название", "Тип задачи", "Статус", "Приоритет", "Исполнитель", "Программа", "Плановое завершение", "Дата завершения", "Расчётное здоровье", "Причина оценки", "Соответствие"];
   const rows = filtered.map((issue) => [
     issue.key,
     issue.summary,
-    issue.issueType,
+    issueTypeLabel(issue.issueType),
     issue.status,
-    issue.priority,
+    priorityLabel(issue.priority),
     issue.assignee,
     issue.programName,
     issue.targetEnd,
     issue.endDate,
-    issue.calculatedHealth,
+    healthLabel(issue.calculatedHealth),
     issue.healthReason,
     `${issue.compliance}%`,
   ]);
@@ -1186,11 +1190,32 @@ function exportCsv() {
 
 function priorityBadge(priority) {
   const className = priority === "Critical" ? "red" : priority === "High" ? "yellow" : priority === "Medium" ? "blue" : "gray";
-  return `<span class="badge badge--${className}">${escapeHtml(priority)}</span>`;
+  return `<span class="badge badge--${className}">${priorityLabel(priority)}</span>`;
 }
 
 function yesNo(value) {
-  return hasValue(value) ? '<span class="badge badge--green">Yes</span>' : '<span class="badge badge--red">No</span>';
+  return hasValue(value) ? '<span class="badge badge--green">Да</span>' : '<span class="badge badge--red">Нет</span>';
+}
+
+function healthLabel(health) {
+  return { Green: "Зелёный", Yellow: "Жёлтый", Red: "Красный" }[health] || escapeHtml(health);
+}
+
+function priorityLabel(priority) {
+  return { Critical: "Критический", High: "Высокий", Medium: "Средний", Low: "Низкий" }[priority] || escapeHtml(priority);
+}
+
+function issueTypeLabel(issueType) {
+  return { Project: "Проект", Program: "Программа" }[issueType] || escapeHtml(issueType);
+}
+
+function pluralize(count, one, few, many) {
+  const mod100 = count % 100;
+  const mod10 = count % 10;
+  if (mod100 >= 11 && mod100 <= 14) return many;
+  if (mod10 === 1) return one;
+  if (mod10 >= 2 && mod10 <= 4) return few;
+  return many;
 }
 
 function formatDate(date) {

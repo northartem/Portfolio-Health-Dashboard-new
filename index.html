@@ -3,82 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio Health Dashboard</title>
+    <title>Дашборд здоровья портфеля</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="page-shell">
       <section class="page-heading" aria-labelledby="dashboard-title">
         <div>
-          <div class="breadcrumb">PPM / Portfolio Command Center</div>
-          <h1 id="dashboard-title">Portfolio Health Dashboard</h1>
-          <p>Executive visibility across Project and Program delivery health.</p>
+          <div class="breadcrumb">PPM / Центр управления портфелем</div>
+          <h1 id="dashboard-title">Дашборд здоровья портфеля</h1>
+          <p>Сводная оценка состояния проектов и программ для руководителей.</p>
         </div>
         <div class="dashboard-actions">
-          <div class="theme-switch" role="group" aria-label="Theme">
-            <button class="theme-switch__button" type="button" data-theme-choice="light">Light</button>
-            <button class="theme-switch__button" type="button" data-theme-choice="dark">Dark</button>
+          <div class="theme-switch" role="group" aria-label="Тема">
+            <button class="theme-switch__button" type="button" data-theme-choice="light">Светлая</button>
+            <button class="theme-switch__button" type="button" data-theme-choice="dark">Тёмная</button>
           </div>
-          <button class="jira-button" type="button" id="resetFilters">Reset</button>
-          <button class="jira-button" type="button" id="exportSnapshot">Export CSV</button>
+          <button class="jira-button" type="button" id="resetFilters">Сбросить</button>
+          <button class="jira-button" type="button" id="exportSnapshot">Экспорт CSV</button>
         </div>
       </section>
 
-      <section class="executive-grid" id="executiveKpis" aria-label="Executive Header"></section>
+      <section class="executive-grid" id="executiveKpis" aria-label="Сводка для руководителей"></section>
 
       <section class="smart-filter-shell" aria-labelledby="filters-title">
         <div class="active-filter-row">
           <div>
-            <span class="eyebrow">Smart filters</span>
+            <span class="eyebrow">Умные фильтры</span>
             <div id="activeFilterChips" class="filter-chips"></div>
           </div>
-          <button class="filter-toggle" type="button" id="filterToggle" aria-expanded="false">Filters <span id="activeFilterCount">0 active</span></button>
+          <button class="filter-toggle" type="button" id="filterToggle" aria-expanded="false">Фильтры <span id="activeFilterCount">0 активных</span></button>
         </div>
         <div class="filter-panel" id="filterPanel" hidden>
           <div class="filter-panel__header">
-            <h2 id="filters-title">Refine portfolio</h2>
-            <span>All filters use existing dashboard behavior</span>
+            <h2 id="filters-title">Настройка выборки</h2>
+            <span>Фильтры применяются ко всем блокам дашборда</span>
           </div>
           <div class="filters-grid">
             <label>
-              PM / Assignee
+              РП / Исполнитель
               <select id="filterAssignee"></select>
             </label>
             <label>
-              Status
+              Статус
               <select id="filterStatus"></select>
             </label>
             <label>
-              Priority
+              Приоритет
               <select id="filterPriority"></select>
             </label>
             <label>
-              Program
+              Программа
               <select id="filterProgram"></select>
             </label>
             <label>
-              Agreements
+              Соглашения
               <select id="filterAgreements"></select>
             </label>
             <label>
-              Quarter
+              Квартал
               <select id="filterQuarter"></select>
             </label>
             <label>
-              Calculated Health
+              Расчётное здоровье
               <select id="filterHealth"></select>
             </label>
             <label class="toggle-line">
               <input type="checkbox" id="filterOverdue" />
-              <span>Overdue</span>
+              <span>Просроченные</span>
             </label>
             <label class="toggle-line">
               <input type="checkbox" id="filterEndingSoon" />
-              <span>Ending &lt; 30 Days</span>
+              <span>Завершение менее чем через 30 дней</span>
             </label>
             <label class="toggle-line">
               <input type="checkbox" id="filterMissingArtifacts" />
-              <span>Missing Artifacts</span>
+              <span>Не хватает артефактов</span>
             </label>
           </div>
         </div>
@@ -86,19 +86,19 @@
 
       <section class="section-heading">
         <div>
-          <span class="eyebrow">Portfolio Overview</span>
-          <h2>Health signals</h2>
+          <span class="eyebrow">Обзор портфеля</span>
+          <h2>Сигналы здоровья</h2>
         </div>
       </section>
 
-      <section class="overview-grid" id="kpiGrid" aria-label="Portfolio Overview"></section>
+      <section class="overview-grid" id="kpiGrid" aria-label="Обзор портфеля"></section>
 
       <section class="dashboard-grid two-col">
         <section class="panel" aria-labelledby="health-viz-title">
           <div class="panel__header">
             <div>
-              <span class="eyebrow">Portfolio Health Visualization</span>
-              <h2 id="health-viz-title">Health distribution</h2>
+              <span class="eyebrow">Визуализация здоровья портфеля</span>
+              <h2 id="health-viz-title">Распределение по здоровью</h2>
             </div>
           </div>
           <div class="health-distribution" id="healthDistribution"></div>
@@ -107,8 +107,8 @@
         <section class="panel" aria-labelledby="risks-title">
           <div class="panel__header">
             <div>
-              <span class="eyebrow">Risks & Actions</span>
-              <h2 id="risks-title">Operational action queue</h2>
+              <span class="eyebrow">Риски и действия</span>
+              <h2 id="risks-title">Очередь оперативных действий</h2>
             </div>
           </div>
           <div class="risk-grid" id="riskActions"></div>
@@ -118,10 +118,10 @@
       <section class="panel attention-panel" aria-labelledby="attention-title">
         <div class="panel__header">
           <div>
-            <span class="eyebrow">Attention Required</span>
-            <h2 id="attention-title">Projects needing executive focus</h2>
+            <span class="eyebrow">Требуют внимания</span>
+            <h2 id="attention-title">Проекты в фокусе руководства</h2>
           </div>
-          <span>Critical projects pinned first</span>
+          <span>Критические проекты показаны первыми</span>
         </div>
         <div class="jira-table premium-table" id="attentionTable"></div>
       </section>
@@ -129,40 +129,40 @@
       <section class="panel" aria-labelledby="timeline-title">
         <div class="panel__header">
           <div>
-            <span class="eyebrow">Portfolio Timeline</span>
-            <h2 id="timeline-title">Deadlines and milestones</h2>
+            <span class="eyebrow">График портфеля</span>
+            <h2 id="timeline-title">Сроки и контрольные точки</h2>
           </div>
-          <span>Overdue and upcoming dates</span>
+          <span>Просроченные и ближайшие даты</span>
         </div>
         <div class="timeline-strip" id="timelineStrip"></div>
       </section>
 
       <section class="section-heading">
         <div>
-          <span class="eyebrow">Operational Detail</span>
-          <h2>Drill-down views</h2>
+          <span class="eyebrow">Операционные детали</span>
+          <h2>Детализированные представления</h2>
         </div>
       </section>
 
       <section class="panel" aria-labelledby="ending-title">
         <div class="panel__header">
-          <h2 id="ending-title">Projects Ending &lt; 30 Days</h2>
-          <span>Active portfolio</span>
+          <h2 id="ending-title">Проекты с завершением менее чем через 30 дней</h2>
+          <span>Активный портфель</span>
         </div>
         <div class="jira-table compact-table" id="endingTable"></div>
       </section>
 
       <section class="panel" aria-labelledby="deviations-title">
         <div class="panel__header">
-          <h2 id="deviations-title">Schedule Deviations</h2>
-          <span>Overdue and shifted projects</span>
+          <h2 id="deviations-title">Отклонения от графика</h2>
+          <span>Просроченные и сдвинутые проекты</span>
         </div>
         <div class="jira-table compact-table" id="deviationsTable"></div>
       </section>
 
       <section class="panel" aria-labelledby="compliance-title">
         <div class="panel__header">
-          <h2 id="compliance-title">Project Quality / Compliance</h2>
+          <h2 id="compliance-title">Качество проектов / Соответствие</h2>
           <span id="complianceScore">0%</span>
         </div>
         <div class="quality-grid" id="qualityGrid"></div>
@@ -170,16 +170,16 @@
 
       <section class="panel" aria-labelledby="workload-title">
         <div class="panel__header">
-          <h2 id="workload-title">Workload by PM</h2>
-          <span>Active projects</span>
+          <h2 id="workload-title">Нагрузка по руководителям проектов</h2>
+          <span>Активные проекты</span>
         </div>
         <div class="jira-table compact-table" id="workloadTable"></div>
       </section>
 
       <section class="panel" aria-labelledby="program-title">
         <div class="panel__header">
-          <h2 id="program-title">Program View</h2>
-          <span>Calculated from linked Projects</span>
+          <h2 id="program-title">Представление по программам</h2>
+          <span>Рассчитано по связанным проектам</span>
         </div>
         <div class="jira-table compact-table" id="programTable"></div>
       </section>
@@ -187,18 +187,18 @@
       <section class="panel" aria-labelledby="status-title">
         <div class="panel__header">
           <div>
-            <h2 id="status-title">Projects by Status</h2>
-            <p>Status distribution across portfolio</p>
+            <h2 id="status-title">Проекты по статусам</h2>
+            <p>Распределение статусов по портфелю</p>
           </div>
-          <span>Project issue type</span>
+          <span>Тип задачи: проект</span>
         </div>
         <div class="status-chart" id="statusChart"></div>
       </section>
 
       <section class="panel" aria-labelledby="registry-title">
         <div class="panel__header">
-          <h2 id="registry-title">Detailed Registry</h2>
-          <span id="registryCount">0 issues</span>
+          <h2 id="registry-title">Подробный реестр</h2>
+          <span id="registryCount">0 задач</span>
         </div>
         <div class="registry-list" id="registryList"></div>
       </section>
@@ -206,7 +206,7 @@
 
     <aside class="issue-drawer" id="issueDrawer" aria-hidden="true">
       <div class="issue-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
-        <button class="drawer-close" id="drawerClose" type="button" aria-label="Close">×</button>
+        <button class="drawer-close" id="drawerClose" type="button" aria-label="Закрыть">×</button>
         <div id="drawerContent"></div>
       </div>
     </aside>
